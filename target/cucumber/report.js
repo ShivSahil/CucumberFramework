@@ -103,7 +103,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3682468100,
+  "duration": 4252185600,
   "status": "passed"
 });
 formatter.background({
@@ -122,7 +122,7 @@ formatter.match({
   "location": "ContactSteps.i_access_webdriverUniversity_contact_us()"
 });
 formatter.result({
-  "duration": 1026000500,
+  "duration": 1027587800,
   "status": "passed"
 });
 formatter.scenario({
@@ -198,7 +198,7 @@ formatter.match({
   "location": "ContactSteps.i_enter_a_valid_firstname(String)"
 });
 formatter.result({
-  "duration": 2072295400,
+  "duration": 2079132400,
   "status": "passed"
 });
 formatter.match({
@@ -211,43 +211,45 @@ formatter.match({
   "location": "ContactSteps.i_enter_a_valid_lastname_as(String)"
 });
 formatter.result({
-  "duration": 60463800,
+  "duration": 63475200,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactSteps.i_enter_a_valid_email_address()"
 });
 formatter.result({
-  "duration": 47082700,
+  "duration": 49750100,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactSteps.i_enter_comment(DataTable)"
 });
 formatter.result({
-  "duration": 3106699500,
+  "duration": 3095243500,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactSteps.i_click_on_submit_button()"
 });
 formatter.result({
-  "duration": 1992721300,
+  "duration": 2410754400,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactSteps.the_information_should_successfully_be_submitted_via_contact_us_form()"
 });
 formatter.result({
-  "duration": 52818900,
-  "status": "passed"
+  "duration": 46523400,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c...ou for your Message![123456789]\u003e but was:\u003c...ou for your Message![]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat CucumberFramework.PageObject.ContactUs_Page.confirmContactUsFormSubmissionWasSuccessful(ContactUs_Page.java:58)\r\n\tat CucumberFramework.steps.ContactSteps.the_information_should_successfully_be_submitted_via_contact_us_form(ContactSteps.java:69)\r\n\tat ✽.Then The information should successfully be submitted via contact us form(ContactUs.feature:18)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 1007639000,
+  "duration": 1230820300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3249863800,
+  "duration": 3740698900,
   "status": "passed"
 });
 formatter.background({
@@ -266,7 +268,7 @@ formatter.match({
   "location": "ContactSteps.i_access_webdriverUniversity_contact_us()"
 });
 formatter.result({
-  "duration": 906993900,
+  "duration": 952048600,
   "status": "passed"
 });
 formatter.scenario({
@@ -342,7 +344,7 @@ formatter.match({
   "location": "ContactSteps.i_enter_a_valid_firstname(String)"
 });
 formatter.result({
-  "duration": 2073475700,
+  "duration": 2080526900,
   "status": "passed"
 });
 formatter.match({
@@ -355,39 +357,41 @@ formatter.match({
   "location": "ContactSteps.i_enter_a_valid_lastname_as(String)"
 });
 formatter.result({
-  "duration": 66965600,
+  "duration": 79418800,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactSteps.i_enter_a_valid_email_address()"
 });
 formatter.result({
-  "duration": 41550300,
+  "duration": 45183700,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactSteps.i_enter_comment(DataTable)"
 });
 formatter.result({
-  "duration": 3100352700,
+  "duration": 3096269900,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactSteps.i_click_on_submit_button()"
 });
 formatter.result({
-  "duration": 1940873800,
+  "duration": 2060014000,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactSteps.the_information_should_successfully_be_submitted_via_contact_us_form()"
 });
 formatter.result({
-  "duration": 36867300,
-  "status": "passed"
+  "duration": 43941200,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c...ou for your Message![123456789]\u003e but was:\u003c...ou for your Message![]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat CucumberFramework.PageObject.ContactUs_Page.confirmContactUsFormSubmissionWasSuccessful(ContactUs_Page.java:58)\r\n\tat CucumberFramework.steps.ContactSteps.the_information_should_successfully_be_submitted_via_contact_us_form(ContactSteps.java:69)\r\n\tat ✽.Then The information should successfully be submitted via contact us form(ContactUs.feature:18)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 862343200,
+  "duration": 926193200,
   "status": "passed"
 });
 });

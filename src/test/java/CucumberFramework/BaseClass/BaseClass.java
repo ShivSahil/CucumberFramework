@@ -37,6 +37,6 @@ public class BaseClass {
 
 
 	public void type(By byEle, String text) {
-		driver.findElement(byEle).sendKeys(text);;
+		driver.findElement(byEle).sendKeys(text);
 	}
 }

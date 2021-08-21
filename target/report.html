@@ -32,6 +32,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -45,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 21, 2021 07:57:05 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 21, 2021 10:14:14 PM</span>
 				</a>
 			</li>
 			<li>
@@ -71,6 +72,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -131,10 +133,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>14</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>12</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -146,10 +148,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='87.5%'><span class='strong'>14</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>12</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -164,17 +166,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Submit data to webapp using contact us form</span>
-						<span class='test-time'>Aug 21, 2021 07:57:05 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Aug 21, 2021 10:14:14 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 21, 2021 07:57:05 PM</span>
-	<span class='label end-time'>Aug 21, 2021 07:57:29 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 24s+568ms</span>
+	<span class='label start-time'>Aug 21, 2021 10:14:14 PM</span>
+	<span class='label end-time'>Aug 21, 2021 10:14:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+476ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -183,12 +185,12 @@
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1  pass' status='pass' test-id='2'>
+				<li class='node level-1  fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario Outline: Submit valid data via contact form</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:05 PM</span>
-						<span class='node-duration'>0h 0m 24s+564ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Aug 21, 2021 10:14:14 PM</span>
+						<span class='node-duration'>0h 0m 26s+472ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -203,7 +205,7 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>7:57:05 PM</td>
+													<td class='timestamp'>10:14:14 PM</td>
 													<td class='step-details'><table><tr><td>firstName</td></tr><tr><td>shiv1</td></tr><tr><td>shiv2</td></tr></table></td>
 												</tr>
 										</tbody>
@@ -211,19 +213,19 @@
 								</div>
 						</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2  pass' status='pass' test-id='3'>
+				<li class='node level-2  fail' status='fail' test-id='3'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario: Submit valid data via contact form</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:05 PM</span>
-						<span class='node-duration'>0h 0m 12s+66ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Aug 21, 2021 10:14:14 PM</span>
+						<span class='node-duration'>0h 0m 13s+57ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-3 leaf pass' status='pass' test-id='4'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Given I access webdriverUniversity contact us</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:08 PM</span>
-						<span class='node-duration'>0h 0m 1s+28ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:19 PM</span>
+						<span class='node-duration'>0h 0m 1s+29ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -239,7 +241,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:09 PM</td>
+													<td class='timestamp'>10:14:20 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -250,8 +252,8 @@
 				<li class='node level-3 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
 						<div class='node-name'>When I enter a valid "shiv1" firstname</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:09 PM</span>
-						<span class='node-duration'>0h 0m 2s+74ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:20 PM</span>
+						<span class='node-duration'>0h 0m 2s+82ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -267,7 +269,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:12 PM</td>
+													<td class='timestamp'>10:14:22 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -278,8 +280,8 @@
 				<li class='node level-3 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And I enter a valid lastname as "Guleri"</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:12 PM</span>
-						<span class='node-duration'>0h 0m 0s+61ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:22 PM</span>
+						<span class='node-duration'>0h 0m 0s+64ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -295,7 +297,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:12 PM</td>
+													<td class='timestamp'>10:14:22 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -306,8 +308,8 @@
 				<li class='node level-3 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And I enter a valid email address</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:12 PM</span>
-						<span class='node-duration'>0h 0m 0s+48ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:22 PM</span>
+						<span class='node-duration'>0h 0m 0s+51ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -323,7 +325,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:12 PM</td>
+													<td class='timestamp'>10:14:22 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -334,8 +336,8 @@
 				<li class='node level-3 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And I enter comment</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:12 PM</span>
-						<span class='node-duration'>0h 0m 3s+108ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:22 PM</span>
+						<span class='node-duration'>0h 0m 3s+97ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -351,12 +353,12 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>7:57:12 PM</td>
+													<td class='timestamp'>10:14:22 PM</td>
 													<td class='step-details'><table><tr><td>a.1</td><td>a.2</td></tr><tr><td>b.1</td><td>b.2</td></tr></table></td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:15 PM</td>
+													<td class='timestamp'>10:14:25 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -367,8 +369,8 @@
 				<li class='node level-3 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
 						<div class='node-name'>When I click on submit button</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:15 PM</span>
-						<span class='node-duration'>0h 0m 1s+994ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:25 PM</span>
+						<span class='node-duration'>0h 0m 2s+412ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -384,7 +386,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:17 PM</td>
+													<td class='timestamp'>10:14:28 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -392,12 +394,12 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf pass' status='pass' test-id='10'>
+				<li class='node level-3 leaf fail' status='fail' test-id='10'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then The information should successfully be submitted via contact us form</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:17 PM</span>
-						<span class='node-duration'>0h 0m 0s+54ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Aug 21, 2021 10:14:28 PM</span>
+						<span class='node-duration'>0h 0m 0s+52ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -410,10 +412,16 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:17 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>10:14:28 PM</td>
+													<td class='step-details'><textarea>org.junit.ComparisonFailure: expected:<...ou for your Message![123456789]> but was:<...ou for your Message![]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at CucumberFramework.PageObject.ContactUs_Page.confirmContactUsFormSubmissionWasSuccessful(ContactUs_Page.java:58)
+	at CucumberFramework.steps.ContactSteps.the_information_should_successfully_be_submitted_via_contact_us_form(ContactSteps.java:69)
+	at ?.Then The information should successfully be submitted via contact us form(ContactUs.feature:18)
+</textarea></td>
 												</tr>
 										</tbody>
 									</table>
@@ -422,19 +430,19 @@
 				</li>
 						</ul>
 				</li>
-				<li class='node level-2  pass' status='pass' test-id='11'>
+				<li class='node level-2  fail' status='fail' test-id='11'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario: Submit valid data via contact form</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:18 PM</span>
-						<span class='node-duration'>0h 0m 11s+437ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Aug 21, 2021 10:14:29 PM</span>
+						<span class='node-duration'>0h 0m 12s+120ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-3 leaf pass' status='pass' test-id='12'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Given I access webdriverUniversity contact us</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:21 PM</span>
-						<span class='node-duration'>0h 0m 0s+907ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:33 PM</span>
+						<span class='node-duration'>0h 0m 0s+953ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -450,7 +458,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:22 PM</td>
+													<td class='timestamp'>10:14:33 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -461,8 +469,8 @@
 				<li class='node level-3 leaf pass' status='pass' test-id='13'>
 					<div class='collapsible-header'>
 						<div class='node-name'>When I enter a valid "shiv2" firstname</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:22 PM</span>
-						<span class='node-duration'>0h 0m 2s+76ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:33 PM</span>
+						<span class='node-duration'>0h 0m 2s+83ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -478,7 +486,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:24 PM</td>
+													<td class='timestamp'>10:14:36 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -489,8 +497,8 @@
 				<li class='node level-3 leaf pass' status='pass' test-id='14'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And I enter a valid lastname as "Guleri"</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:24 PM</span>
-						<span class='node-duration'>0h 0m 0s+68ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:36 PM</span>
+						<span class='node-duration'>0h 0m 0s+81ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -506,7 +514,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:24 PM</td>
+													<td class='timestamp'>10:14:36 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -517,8 +525,8 @@
 				<li class='node level-3 leaf pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And I enter a valid email address</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:24 PM</span>
-						<span class='node-duration'>0h 0m 0s+42ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:36 PM</span>
+						<span class='node-duration'>0h 0m 0s+46ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -534,7 +542,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:24 PM</td>
+													<td class='timestamp'>10:14:36 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -545,8 +553,8 @@
 				<li class='node level-3 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And I enter comment</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:24 PM</span>
-						<span class='node-duration'>0h 0m 3s+102ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:36 PM</span>
+						<span class='node-duration'>0h 0m 3s+99ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -562,12 +570,12 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>7:57:24 PM</td>
+													<td class='timestamp'>10:14:36 PM</td>
 													<td class='step-details'><table><tr><td>a.1</td><td>a.2</td></tr><tr><td>b.1</td><td>b.2</td></tr></table></td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:27 PM</td>
+													<td class='timestamp'>10:14:39 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -578,8 +586,8 @@
 				<li class='node level-3 leaf pass' status='pass' test-id='17'>
 					<div class='collapsible-header'>
 						<div class='node-name'>When I click on submit button</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:27 PM</span>
-						<span class='node-duration'>0h 0m 1s+942ms</span>
+						<span class='node-time'>Aug 21, 2021 10:14:39 PM</span>
+						<span class='node-duration'>0h 0m 2s+61ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -595,7 +603,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:29 PM</td>
+													<td class='timestamp'>10:14:41 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -603,12 +611,12 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf pass' status='pass' test-id='18'>
+				<li class='node level-3 leaf fail' status='fail' test-id='18'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then The information should successfully be submitted via contact us form</div>						
-						<span class='node-time'>Aug 21, 2021 07:57:29 PM</span>
-						<span class='node-duration'>0h 0m 0s+39ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Aug 21, 2021 10:14:41 PM</span>
+						<span class='node-duration'>0h 0m 0s+45ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -621,10 +629,16 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:57:29 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>10:14:41 PM</td>
+													<td class='step-details'><textarea>org.junit.ComparisonFailure: expected:<...ou for your Message![123456789]> but was:<...ou for your Message![]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at CucumberFramework.PageObject.ContactUs_Page.confirmContactUsFormSubmissionWasSuccessful(ContactUs_Page.java:58)
+	at CucumberFramework.steps.ContactSteps.the_information_should_successfully_be_submitted_via_contact_us_form(ContactSteps.java:69)
+	at ?.Then The information should successfully be submitted via contact us form(ContactUs.feature:18)
+</textarea></td>
 												</tr>
 										</tbody>
 									</table>
@@ -692,13 +706,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@shivsahil</span>
 						<span class='category-status right'>
-							<span class='label pass'>3</span>
+							<span class='label fail'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 3</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
 							
 						</div>
 					
@@ -713,19 +727,19 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 21, 2021 07:57:05 PM</td>
+										<td>Aug 21, 2021 10:14:14 PM</td>
 										<td class='linked' test-id='1'>Submit data to webapp using contact us form</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 21, 2021 07:57:05 PM</td>
+										<td>Aug 21, 2021 10:14:14 PM</td>
 										<td class='linked' test-id='3'>Submit data to webapp using contact us form.Scenario Outline: Submit valid data via contact form.Scenario: Submit valid data via contact form</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 21, 2021 07:57:18 PM</td>
+										<td>Aug 21, 2021 10:14:29 PM</td>
 										<td class='linked' test-id='11'>Submit data to webapp using contact us form.Scenario Outline: Submit valid data via contact form.Scenario: Submit valid data via contact form</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -744,6 +758,84 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.junit.ComparisonFailure</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Aug 21, 2021 10:14:28 PM</td>
+                                                        <td class='linked' test-id='10'>Submit data to webapp using contact us form.Scenario Outline: Submit valid data via contact form.Scenario: Submit valid data via contact form.Then The information should successfully be submitted via contact us form</td>
+                                                        <td><pre><textarea>org.junit.ComparisonFailure: expected:<...ou for your Message![123456789]> but was:<...ou for your Message![]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at CucumberFramework.PageObject.ContactUs_Page.confirmContactUsFormSubmissionWasSuccessful(ContactUs_Page.java:58)
+	at CucumberFramework.steps.ContactSteps.the_information_should_successfully_be_submitted_via_contact_us_form(ContactSteps.java:69)
+	at ?.Then The information should successfully be submitted via contact us form(ContactUs.feature:18)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aug 21, 2021 10:14:41 PM</td>
+                                                        <td class='linked' test-id='18'>Submit data to webapp using contact us form.Scenario Outline: Submit valid data via contact form.Scenario: Submit valid data via contact form.Then The information should successfully be submitted via contact us form</td>
+                                                        <td><pre><textarea>org.junit.ComparisonFailure: expected:<...ou for your Message![123456789]> but was:<...ou for your Message![]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at CucumberFramework.PageObject.ContactUs_Page.confirmContactUsFormSubmissionWasSuccessful(ContactUs_Page.java:58)
+	at CucumberFramework.steps.ContactSteps.the_information_should_successfully_be_submitted_via_contact_us_form(ContactSteps.java:69)
+	at ?.Then The information should successfully be submitted via contact us form(ContactUs.feature:18)
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -765,19 +857,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 21, 2021 07:57:05 PM</div>
+					<div class='panel-lead'>Aug 21, 2021 10:14:14 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 21, 2021 07:57:30 PM</div>
+			 		<div class='panel-lead'>Aug 21, 2021 10:14:42 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>25,509ms</div>
+					<div class='panel-lead'>27,498ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -793,8 +885,8 @@
 						</tr>
 						<tr>
 							<td>@shivsahil</td>
-							<td>3</td>
 							<td>0</td>
+							<td>3</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -810,22 +902,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 14,
-				failParent: 0,
+				passParent: 12,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 2,
 				
-				passChild: 14,
-				failChild: 0,
+				passChild: 12,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 2,
-				exceptionsChild: 0,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

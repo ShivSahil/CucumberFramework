@@ -32,6 +32,8 @@ public class MasterHooks extends BaseClass{
 			System.out.println("Scenario failed with name:- "
 					+ scenario.getName());
 			}
+		
+		
 		if(driver != null ) // "isPassed()" doesn't exist
 			{
 			driver.manage().deleteAllCookies();

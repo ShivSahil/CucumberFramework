@@ -55,7 +55,7 @@ public class ContactUs_Page extends BaseClass{
 		WebElement thanksContactUsPage = driver.findElement(By.xpath(".//*[@id='contact_reply']/h1"));
 		
 				
-		Assert.assertEquals("Thank You for your Message!", thanksContactUsPage.getText()  );		
+		Assert.assertEquals("Thank You for your Message!123456789", thanksContactUsPage.getText()  );		
 		return new ContactUs_Page();
 	}
 

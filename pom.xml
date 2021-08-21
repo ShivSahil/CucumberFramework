@@ -36,9 +36,9 @@
 					<configuration>
 						<suiteXmlFiles>
 							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<testErrorIgnore>false</testErrorIgnore>
+							<testFailureIgnore>false</testFailureIgnore>
 						</suiteXmlFiles>
-						<testErrorIgnore>false</testErrorIgnore>
-						<testFailureIgnore>false</testFailureIgnore>
 					</configuration>
 				</plugin>
 			</plugins>
