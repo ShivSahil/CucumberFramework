@@ -1,0 +1,21 @@
+Set up before Cucumber framework
+
+https://docs.google.com/document/d/11KYUJRkHLIEQYR_nSs0wMCs4jptBxsYi03MA-fmja7E/edit?usp=sharing
+
+
+
+
+
+
+dependencies used
+
+https://docs.google.com/document/d/1P0hryuOftC-OEMgkiMoZNeQ97CwmCPj9Y2BSO7lXaGQ/edit?usp=sharing
+
+
+
+
+
+
+properly import a project (using .zip)
+
+https://docs.google.com/document/d/15neLkcLMaRcjXXgHbHgtUz_s62Jo3FmB-hjNWJuVPEE/edit?usp=sharing
